@@ -27,7 +27,7 @@ function toggleIsLiked(heart, button) {
 }
 
 function setButtonText(heart, button) {
-  if ([...heart.classList].includes('is-liked')) {
+  if (heart.classList.contains('is-liked')) {
     setTimeout(
       () => (button.querySelector('.button__text').textContent = 'Unlike'),
       500
@@ -41,16 +41,14 @@ function setButtonText(heart, button) {
 }
 
 document.querySelectorAll('.modal form').forEach(form => {
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-  
+  form.addEventListener('submit', (event) => {
+
     window.modal.close();
   });
 });
 
 const openModalButton = document.getElementById("open-modal");
-const modal = document.getElementById("modal");
 
 openModalButton.addEventListener("click", () => {
-  modal.showModal();
+  window.modal.showModal();
 });
