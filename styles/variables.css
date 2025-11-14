@@ -1,19 +1,83 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-
-
 :root {
-    --basic-font: 'Inter-Variable';
-    --pixel-font: 'PressStart2P';
-    --slim-font-weight: 400;
-    --bold-font-weight: 700;
-    --background-color: #FFF;
-    --text-color: #000;
-    --element-width: clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem);
-    --gradient-color-first: #d3d3d3;
-    --gradient-color-second: #e7e7e7;
-    --gradient-color-third: #1a1a1a;
-    --difference-text-color: #fff;
-    --difference-background-color: #fff;
-    --contour-color: #000;
-    --core-color: #ff0000;
+  --gradient-grid-horizontal: repeating-linear-gradient(
+   to left,
+   #d3d3d3 0 2px,
+   #d3d3d300 2px 4px
+ ) 0 0 / 100% 100vh no-repeat;
+
+ --gradient-grid-vertical: repeating-linear-gradient(
+   to bottom,
+   #d3d3d3 0 2px,
+   #d3d3d300 2px 4px
+ ) 0 0 / 100% 100vh no-repeat;
+
+ --gradient-background-main: linear-gradient(
+   to bottom,
+   #e7e7e7 0.01%,
+   #1a1a1a
+ ) 0 0 / 100% 100vh no-repeat;
+
+ --page-background-image:
+   var(--gradient-grid-horizontal),
+   var(--gradient-grid-vertical),
+   var(--gradient-background-main);
+
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P';
+
+  --main-font-weight: 400;
+  --main-font-bold-weight: 700;
+
+  --background-clr: #ffffff;
+  --accent-clr: rgb(0 0 0);
+  --accent-clr-transparent: rgb(0 0 0 / 60%);
+  --btn-text-clr: #fff;
+  --text-clr: #000;
+  --color-black:#000;
+
+  --sparks-fill-clr: #f00;
+  --sparks-fill-clr-transparent: rgb(255 0 0 / 0%);
+  --contour-clr: rgb(0 0 0);
+  --core-clr: rgb(0 0 0);
+  --core-clr-transparent: rgb(0 0 0 / 0%);
+  --main-body-clr: rgb(0 0 0);
+  --main-body-clr-transparent: rgb(0 0 0 / 0%);
+  --contour-active-clr: #f00;
+  --core-active-clr: #f00;
+  --main-body-active-clr: #f00;
+
+  --gradient-line-1: rgb(211 211 211);
+  --gradient-line-2: rgb(211 211 211 / 0%);
+  --gradient-smeared-1: #e7e7e7;
+  --gradient-smeared-2: #1a1a1a;
+
+  --gradient-left-to-right: repeating-linear-gradient(
+    to right,
+    var(--gradient-line-2) 0,
+    var(--gradient-line-1) 1px,
+    var(--gradient-line-1) 2px,
+    var(--gradient-line-2) 3px,
+    var(--gradient-line-2) 4px
+  );
+  --gradient-top-to-bottom: repeating-linear-gradient(
+    to bottom,
+    var(--gradient-line-2) 0,
+    var(--gradient-line-1) 1px,
+    var(--gradient-line-1) 2px,
+    var(--gradient-line-2) 3px,
+    var(--gradient-line-2) 4px
+  );
+
+  --gradient-background: linear-gradient(
+    to bottom,
+    var(--gradient-smeared-1) 0.01%,
+    var(--gradient-smeared-2)
+  );
+
+  --transform-time: 0.3s;
+  --transition-function: ease;
+
+  --border-width: 2px;
+
 }

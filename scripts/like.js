@@ -39,3 +39,11 @@ function setButtonText(heart, button) {
     );
   }
 }
+
+document.querySelectorAll('.modal form').forEach(form => {
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    window.modal.close();
+  });
+});
