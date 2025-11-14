@@ -47,3 +47,10 @@ document.querySelectorAll('.modal form').forEach(form => {
     window.modal.close();
   });
 });
+
+const openModalButton = document.getElementById("open-modal");
+const modal = document.getElementById("modal");
+
+openModalButton.addEventListener("click", () => {
+  modal.showModal();
+});
