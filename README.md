@@ -1,1 +1,1 @@
-https://dimasik2007123.github.io/zakrivayuschiy-teg-ad/
+https://github.com/hxvfgvvcffxjdj-hash/zakrivayuschiy-teg-ad/
