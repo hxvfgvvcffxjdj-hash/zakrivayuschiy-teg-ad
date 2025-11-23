@@ -430,7 +430,7 @@
   filter: brightness(150%) contrast(120%) saturate(130%);
 }
 
-@media (max-width: 400px) {
+@media (width <= 376px) {
   .header {
     width: 100%;
     height: 327px;
