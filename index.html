@@ -227,13 +227,9 @@
         </svg>
         <h2 class="modal__title">Вставьте дискету, чтобы продолжить</h2>
       </div>
-      <button
-				type="submit"
-				class="button__OK button"
-				onclick="window['save__modal'].close()"
-			>
-				<span class="button__text">OK</span>
-			</button>
+      <button type="button" class="dialog-close-button" onclick="window['dialog'].close()">
+        <span class="button__text">Ок</span>
+      </button>
     </dialog>
     <script src="./scripts/like.js"></script>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
