@@ -487,7 +487,16 @@
   }
 
   .card__img-block {
-    max-height: 371px;
+    position: relative;
+    max-height: none; /* Убираем фиксированную высоту */
+    height: auto;
+    aspect-ratio: 1 / 1; /* Квадратное соотношение */
+  }
+
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполняет контейнер без искажений */
   }
 
   .card__img-label {
