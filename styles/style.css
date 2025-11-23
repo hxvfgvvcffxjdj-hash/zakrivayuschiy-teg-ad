@@ -10,7 +10,6 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--weight-title) var(--weight-text);
 }
 
 .header {
