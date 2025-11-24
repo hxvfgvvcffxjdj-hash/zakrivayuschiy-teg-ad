@@ -488,15 +488,15 @@
 
   .card__img-block {
     position: relative;
-    max-height: none;
+    max-height: none; /* Убираем фиксированную высоту */
     height: auto;
-    aspect-ratio: 1 / 1; 
+    aspect-ratio: 1 / 1; /* Квадратное соотношение */
   }
 
   .card__img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover; /* Заполняет контейнер без искажений */
   }
 
   .card__img-label {
